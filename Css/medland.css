@@ -233,15 +233,19 @@ button{
     }
     .schedule .div1{
         width: 15em;
+        margin-bottom: 3px;
     }
     .schedule .div2{
         width: 15em;
+        margin-bottom: 3px
     }
     .schedule .div3{
         width: 15em;
+        margin-bottom: 3px
     }
     .schedule .div4{
         width: 15em;
+        margin-bottom: 3px
     }
     .HOC_address{
         margin-top: 25%;
@@ -259,6 +263,7 @@ button{
       .nav_menu{
         display: block;
         text-align: center;
+        margin: 2em;
       }
       .logo{
           display: block;
@@ -272,7 +277,11 @@ button{
         }
         .HOC_address{
             margin-top: 30%;
+            padding: 2em;
         } 
+        .HOC_address h6{
+            padding: 1em;
+        }
         .img{
             justify-content: center;
             margin-right: 0;
@@ -280,11 +289,15 @@ button{
         .HOC_address img{
             width: 100%;
         }
+       
 }
 @media screen and (max-width: 600px){
     .HOC_address{
         margin-top: 35%;
         /* justify-content: center; */
+    }
+    .schedule .div1{
+        margin-top: 2em;
     }
 }
 
