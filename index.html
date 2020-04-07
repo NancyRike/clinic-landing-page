@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="Css/medland.css">
     <title>Med_landing</title>
 </head>
-<body>
+<body onload = "onDomMount()">
     <div class="pre_contact">
         <div class="contact">
             <div>
@@ -28,10 +28,42 @@
                 <h5>Medservice</h5> 
         </div>
         <div class="links">
-            <a href="#">Home</a>
-            <a href="#">Pages</a>
-            <a href="#">Sample</a>
-            <button id="booking">Make An Appointment</button>
+            <ul class="links">
+                <li><a href="#">Home</a</li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Sample</a></li>
+                <li><button id="bookings">Make An Appointment</button></li>
+                    <div id="for_booking">
+                        <form action="" method="post" id="info_form"></form>
+                        <ul>
+                            <li>Name: <input type="text" id="pName"></li>
+                            <li>Gender: <select name="" id="pGender">
+                                        <option value=""></option>
+                                        <option value="male">male</option>
+                                        <option value="female">Female</option>
+                                        <option value="others">others</option>
+                                        </select>
+                                    </li>
+                                    <li>Age: <input type="number" id="pAge"></li>
+                                    <li>medical Speciality:<select name="" id="pSpecs">
+                                        <option value=""></option>
+                                        <option value="O&G">O&G</option>
+                                        <option value="Cardiology">Cardiology</option>
+                                        <option value="Heamatology">Heamatology</option>
+                                        <option value="Neurology">Neurology</option>
+                                        <option value="General heck-up">General check-up</option>
+                                        <option value="Pediatrics">Pediatrics</option>        
+                                            </select>
+                                    </li>
+                                    <li>phonenumber:<input type="number" id="pNumber"></li>
+                                    <li>Symptom: <input type="text" id="pSymptom"></li>
+                                    <li><input type ="submit" value = "Submit" id="to_submit"style="background-color: white; width: 10em; cursor: pointer; color: rgb(15, 104, 124); border: 1px solid #3e3e3e; margin-top: 2em;"></li>
+                        </ul>
+                    </div>
+                </ul>         
+            </div>
+        </div>
+               
         </div>
     </div>
     <div class="welcome_page">
@@ -66,7 +98,7 @@
         </div>
         <div class="div3">
             <h3 id="showAppoint">Appointment</h3>
-               <p id="theappiont">Doctors on call stay on a 24hours
+               <p id="theappoint">Doctors on call stay on a 24hours
                 shift and usually get very exhausted 
                 so we do not advice them treating
                 patients until after days of rest 
@@ -113,6 +145,6 @@
     <div class="footer">
         Copyright &copy; <a href="#">devStudio</a>
     </div>
-
+<script src="js/medland.js"></script>
 </body>
 </html>

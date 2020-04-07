@@ -9,6 +9,14 @@ button{
     border-radius: 10px;
     cursor: pointer;
 }
+li{
+    text-decoration: none;
+    list-style: none;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
 .pre_contact {
     background-color: #00A2C7;
 }
@@ -47,7 +55,6 @@ button{
 
 }
 .links a{
-    
     text-decoration: none;
     color: #00A2C7;
     font-size: 18px;
@@ -57,6 +64,40 @@ button{
     color: white;
     background-color: #00A2C7;
     
+}
+#for_booking{
+    /* display: flex; 
+    justify-content: space-between;*/
+    position: absolute;
+    color: white;
+    background-color: #00A2C7;
+    padding: 1em;
+    text-align: center;
+    margin-top: 3em;
+    width: 15em;
+}
+#for_booking input{
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    width: 15em;
+}
+select{
+    width: 17em;
+    padding: 10px;
+    border-radius: 8px;
+}
+#submit{
+    background-color: white;
+    color: #00A2C7;
+    border: 1px solid #3e3e3e;
+    width: 7px;
+}
+#for_booking li{
+   margin-top: 6px;
+}
+#pSymptom input{
+    padding: 5em 1em
 }
 .welcome_page{
     background-image: url("../img/choice2.jpg");
